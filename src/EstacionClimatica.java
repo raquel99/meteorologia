@@ -10,7 +10,7 @@ public class EstacionClimatica {
 	// instance variables - replace the example below with your own
 	
     private String nombre;
-    private int año;
+    private int anio;
     private TempHumDia mediciones[];  // Tabla de mediciones
     private int nummediciones;      // Número de mediciones almacenadas
 
@@ -22,7 +22,7 @@ public class EstacionClimatica {
    
     {
          this.nombre = "";
-         this.año = 2000;  
+         this.anio = 2000;  
          mediciones = new TempHumDia[366];  // Por si el año es bisiesto.  
          nummediciones = 0;
     }
@@ -35,7 +35,7 @@ public class EstacionClimatica {
     {
          this(); // Llamo al constructor por defecto
          this.nombre = nombre;
-         this.año = año;
+         this.anio = año;
          
     }
     /**
@@ -53,7 +53,7 @@ public class EstacionClimatica {
     			mediciones[i] = media;
     			metido=true;
     		}
-    		if(mediciones[i].getAño()!=media.getAño()) {
+    		if(mediciones[i].getanio()!=media.getanio()) {
     			mediciones[i]=null;
     			metido=false;
     		}
@@ -69,7 +69,7 @@ public class EstacionClimatica {
     public boolean delDia ( TempHumDia media){
     	boolean existe=true;
     	for (int i=0; i<mediciones.length;i++) {
-    		if(mediciones[i].getDia()==media.getDia() && mediciones[i].getAño()==media.getMes() && mediciones[i].getAño()==media.getAño()) {
+    		if(mediciones[i].getDia()==media.getDia() && mediciones[i].getanio()==media.getMes() && mediciones[i].getanio()==media.getanio()) {
     			mediciones[i]=null;
     			existe=true;
     		}

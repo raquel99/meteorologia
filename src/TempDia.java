@@ -3,7 +3,7 @@ public class TempDia {
 	//atributos
 	private int dia;
 	private int mes;
-	private int año;
+	private int anio;
 	private int temp_max;
 	private int temp_min;
 	
@@ -11,7 +11,7 @@ public class TempDia {
 	public TempDia(){
 		dia=0;
 		mes=0;
-		año=0;
+		anio=0;
 		temp_max=0;
 		temp_min=0;	
 	}
@@ -19,15 +19,15 @@ public class TempDia {
 	 * guarda la fecha de la medición, la temperatura máxima registrada y la temperatura mínima
 	 * @param dia
 	 * @param mes
-	 * @param año
+	 * @param anio
 	 * @param temp_max
 	 * @param temp_min
 	 */
 	
-	public TempDia(int dia, int mes, int año, int temp_max, int temp_min){
+	public TempDia(int dia, int mes, int anio, int temp_max, int temp_min){
 		this.dia=dia;
 		this.mes=mes;
-		this.año=año;
+		this.anio=anio;
 		this.temp_max=temp_max;
 		this.temp_min=temp_min;	
 	}
@@ -61,20 +61,20 @@ public class TempDia {
 	}
 	
 	/**
-	 * getAño
-	 * @returnaño
+	 * getanio
+	 * @returnanio
 	 */
-	public int getAño() {
-		return año;
+	public int getanio() {
+		return anio;
 	}
 	
 	/**
-	 * setAño
-	 * @param año
+	 * setanio
+	 * @param anio
 	 */
 
-	public void setAño(int año) {
-		this.año = año;
+	public void setanio(int anio) {
+		this.anio = anio;
 	}
 	
 	/**
@@ -114,7 +114,7 @@ public class TempDia {
 
 	public String toString() {
 		int media=(temp_max+temp_min)/2;
-		return "TempDia [dia=" + dia + ", mes=" + mes + ", año=" + año + ", temp_max=" + temp_max + ", temp_min="
-				+ temp_min +"media ="+ media+ "]";
+		return "TempDia [dia=" + dia + ", mes=" + mes + ", anio=" + anio + ", temp_max=" + temp_max +
+				", temp_min="+ temp_min +"media ="+ media+ "]";
 	}
 }
